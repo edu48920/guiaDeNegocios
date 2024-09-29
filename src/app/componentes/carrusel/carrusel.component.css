@@ -1,0 +1,20 @@
+.my-carousel {
+    max-width: 500px; /* Ajusta el ancho del carrusel */
+    margin-right: 30px; /* Centra el carrusel */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta cualquier contenido que se salga */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle profundidad */
+  }
+  
+  .my-carousel .carousel-inner img {
+    height: 300px; /* Ajusta la altura de las imágenes */
+    object-fit: cover; /* Ajusta las imágenes para que no se deformen */
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro para los controles */
+    border-radius: 50%; /* Redondea los controles */
+  }
+  

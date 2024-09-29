@@ -1,0 +1,39 @@
+
+  .header-title {
+    font-size: 8rem; /* Ajusta el tamaño de la fuente según sea necesario */
+    font-weight: bold; /* Puedes ajustar el peso de la fuente */
+    color: transparent; /* Hace que el texto sea transparente */
+    background-image: url('https://images.pexels.com/photos/5850085/pexels-photo-5850085.jpeg?auto=compress&cs=tinysrgb&w=300');
+    background-size: cover; /* Asegúrate de que la imagen cubra el contorno */
+    background-position: center; /* Centra la imagen */
+    -webkit-background-clip: text; /* Para navegadores WebKit */
+    background-clip: text; /* Para navegadores estándar */
+}
+  .header {
+    
+      position: relative;
+      overflow: hidden;
+      background-color: rgba(39, 20, 20, 0.5); /* Color de fondo blanco semi-transparente */
+      min-height: 200px; /* Ajusta según sea necesario */
+      display: flex; /* Usar flexbox para centrar el contenido */
+      justify-content: center; /* Centrar horizontalmente */
+      align-items: center; /* Centrar verticalmente */
+  }
+  
+
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0) 100%);
+    clip-path: polygon(0 60%, 50% 0%, 100% 60%, 100% 100%, 0 100%); /* Forma de ola */
+    z-index: 0; /* Coloca el pseudo-elemento detrás del contenido */
+}
+
+
+  
+ 
